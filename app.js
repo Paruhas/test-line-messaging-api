@@ -501,7 +501,7 @@ app.post("/line/hook", async (req, res, next) => {
 
         const storeData = await findOneStore({
           where: {
-            lineGroupId: sourceGroupId,
+            name: groupName,
           },
         });
         if (storeData === undefined) {
